@@ -1,0 +1,247 @@
+{
+  "new": {
+    "total": 0,
+    "items": []
+  },
+  "drafts": {
+    "total": 1,
+    "items": [
+      {
+        "id": "d2",
+        "subject": "Office Relocation Announcement Office Relocation Announcement",
+        "description": "We are moving our Accra office to the new Ridge Park Tower. Please read the timeline and packing instructions.",
+        "tags": ["Admin", "Announcement"],
+        "memoAuthor": {
+          "id": "u1",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "avatarUrl": "https://i.pravatar.cc/48?img=12"
+        },
+        "memoRecipient": {
+          "id": "u1",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "avatarUrl": "https://i.pravatar.cc/48?img=12"
+        },
+        "referenceNumber": "REF-2025-0098",
+        "status": "final-draft",
+        "attachments": [
+          { "filename": "relocation-plan.pdf", "url": "/files/relocation-plan.pdf", "size": 142536 },
+          { "filename": "floorplan.png", "url": "/files/floorplan.png", "size": 54312 }
+        ],
+        "createdAt": "2025-09-29T16:53:00.000Z",
+        "dateCompleted": "2025-10-05T10:30:00.000Z",
+        "reviewsSection": [
+          {
+            "reviewer": "Alice Johnson",
+            "actionOfficer": "Mark Davis",
+            "comments": "Looks good overall, but please clarify the budget section.",
+            "date": "2025-10-02"
+          },
+          {
+            "reviewer": "Bob Lee",
+            "actionOfficer": "Mark Davis",
+            "comments": "Approved. Ensure to follow up on the delivery timeline.",
+            "date": "2025-10-03"
+          }
+        ]
+      },
+       {
+        "id": "d3",
+        "subject": "1Office Relocation Announcement Office Relocation Announcement",
+        "description": "We are moving our Accra office to the new Ridge Park Tower. Please read the timeline and packing instructions.",
+        "tags": ["Announcement"],
+        "memoAuthor": {
+          "id": "u1",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "avatarUrl": "https://i.pravatar.cc/48?img=15"
+        },
+        "memoRecipient": "All Staff",
+        "referenceNumber": "REF-2025-0098",
+        "status": "final-draft",
+        "attachments": [
+          { "filename": "relocation-plan.pdf", "url": "/files/relocation-plan.pdf", "size": 142536 },
+          { "filename": "floorplan.png", "url": "/files/floorplan.png", "size": 54312 }
+        ],
+        "createdAt": "2025-09-29T16:53:00.000Z",
+        "dateCompleted": "2025-10-05T10:30:00.000Z",
+        "reviewsSection": [
+          {
+            "reviewer": "Alice Johnson",
+            "actionOfficer": "Mark Davis",
+            "comments": "Looks good overall, but please clarify the budget section.",
+            "date": "2025-10-02"
+          },
+          {
+            "reviewer": "Bob Lee",
+            "actionOfficer": "Mark Davis",
+            "comments": "Approved. Ensure to follow up on the delivery timeline.",
+            "date": "2025-10-03"
+          }
+        ]
+      },
+      {
+        "id": "d1",
+        "subject": "Office Relocation Announcement",
+        "description": "We are moving our Accra office to the new Ridge Park Tower. Please read the timeline and packing instructions.",
+        "tags": ["Admin", "Announcement"],
+        "memoAuthor": {
+          "id": "u1",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "avatarUrl": "https://i.pravatar.cc/48?img=12"
+        },
+        "memoRecipient": "All Staff",
+        "referenceNumber": "REF-2025-0098",
+        "status": "Draft Review",
+        "attachments": [
+          { "filename": "relocation-plan.pdf", "url": "/files/relocation-plan.pdf", "size": 142536 },
+          { "filename": "floorplan.png", "url": "/files/floorplan.png", "size": 54312 }
+        ],
+        "createdAt": "2025-09-29T16:53:00.000Z",
+        "dateCompleted": "2025-10-05T10:30:00.000Z",
+        "reviewsSection": [
+          {
+            "reviewer": "Alice Johnson",
+            "actionOfficer": "Mark Davis",
+            "comments": "Looks good overall, but please clarify the budget section.",
+            "date": "2025-10-02"
+          },
+          {
+            "reviewer": "Bob Lee",
+            "actionOfficer": "Mark Davis",
+            "comments": "Approved. Ensure to follow up on the delivery timeline.",
+            "date": "2025-10-03"
+          }
+        ]
+      }
+    ]
+  },
+  "inbox": {
+    "total": 1,
+   "items": [
+  
+      {
+        "id": "d1",
+        "subject": "Office Relocation Announcement",
+        "description": "We are moving our Accra office to the new Ridge Park Tower. Please read the timeline and packing instructions.",
+        "tags": ["Admin", "Announcement"],
+        "memoAuthor": {
+          "id": "u1",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "avatarUrl": "https://i.pravatar.cc/48?img=12"
+        },
+        "memoRecipient": "All Staff",
+        "referenceNumber": "REF-2025-0098",
+        "status": "In Progress inbox",
+        "attachments": [
+          { "filename": "relocation-plan.pdf", "url": "/files/relocation-plan.pdf", "size": 142536 },
+          { "filename": "floorplan.png", "url": "/files/floorplan.png", "size": 54312 }
+        ],
+        "createdAt": "2025-09-29T16:53:00.000Z",
+        "dateCompleted": "2025-10-05T10:30:00.000Z",
+        "reviewsSection": [
+          {
+            "reviewer": "Alice Johnson",
+            "actionOfficer": "Mark Davis",
+            "comments": "Looks good overall, but please clarify the budget section.",
+            "date": "2025-10-02"
+          },
+          {
+            "reviewer": "Bob Lee",
+            "actionOfficer": "Mark Davis",
+            "comments": "Approved. Ensure to follow up on the delivery timeline.",
+            "date": "2025-10-03"
+          }
+        ]
+      }
+    ]
+ 
+  },
+  "sent": {
+    "total": 0,
+    "items": [
+      {
+        "id": "d1",
+        "subject": "Office Relocation Announcement",
+        "description": "We are moving our Accra office to the new Ridge Park Tower. Please read the timeline and packing instructions.",
+        "tags": ["Admin", "Announcement"],
+        "memoAuthor": {
+          "id": "u1",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "avatarUrl": "https://i.pravatar.cc/48?img=12"
+        },
+        "memoRecipient": "All Staff",
+        "referenceNumber": "REF-2025-0098",
+        "status": "In Progress-Sent",
+        "attachments": [
+          { "filename": "relocation-plan.pdf", "url": "/files/relocation-plan.pdf", "size": 142536 },
+          { "filename": "floorplan.png", "url": "/files/floorplan.png", "size": 54312 }
+        ],
+        "createdAt": "2025-09-29T16:53:00.000Z",
+        "dateCompleted": "2025-10-05T10:30:00.000Z",
+        "reviewsSection": [
+          {
+            "reviewer": "Alice Johnson",
+            "actionOfficer": "Mark Davis",
+            "comments": "Looks good overall, but please clarify the budget section.",
+            "date": "2025-10-02"
+          },
+          {
+            "reviewer": "Bob Lee",
+            "actionOfficer": "Mark Davis",
+            "comments": "Approved. Ensure to follow up on the delivery timeline.",
+            "date": "2025-10-03"
+          }
+        ]
+      }
+    ]
+  },
+  "copied": {
+    "total": 0,
+    "items": [
+             {
+        "id": "d3",
+        "subject": "Office Relocation Announcement Office Relocation Announcement",
+        "description": "We are moving our Accra office to the new Ridge Park Tower. Please read the timeline and packing instructions.",
+        "tags": ["Admin", "Announcement"],
+        "memoAuthor": {
+          "id": "u1",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "avatarUrl": "https://i.pravatar.cc/48?img=15"
+        },
+        "memoRecipient": "All Staff",
+        "referenceNumber": "REF-2025-0098",
+        "status": "Unread",
+        "attachments": [
+          { "filename": "relocation-plan.pdf", "url": "/files/relocation-plan.pdf", "size": 142536 },
+          { "filename": "floorplan.png", "url": "/files/floorplan.png", "size": 54312 }
+        ],
+        "createdAt": "2025-09-29T16:53:00.000Z",
+        "dateCompleted": "2025-10-05T10:30:00.000Z",
+        "reviewsSection": [
+          {
+            "reviewer": "Alice Johnson",
+            "actionOfficer": "Mark Davis",
+            "comments": "Looks good overall, but please clarify the budget section.",
+            "date": "2025-10-02"
+          },
+          {
+            "reviewer": "Bob Lee",
+            "actionOfficer": "Mark Davis",
+            "comments": "Approved. Ensure to follow up on the delivery timeline.",
+            "date": "2025-10-03"
+          }
+        ]
+      }
+    ]
+  },
+  "bcc": {
+    "total": 0,
+    "items": []
+  }
+}
