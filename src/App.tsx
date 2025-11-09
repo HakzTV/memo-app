@@ -11,8 +11,9 @@ import Appview from './page/Appview';
 import Login from './page/auth/Login';
 import Signup from './page/auth/SignUp';
 import { Toaster } from 'react-hot-toast';
-import VerifyEmail from './page/auth/verifyEmail';
 import SetupMFA from './page/auth/SetUp-MFA';
+import { SelectedItemProvider } from './context/SelectedItemContext';
+import VerifyEmail from './page/auth/VerifyEmail';
 
 
 
@@ -25,6 +26,9 @@ function App() {
       
       <Toaster  position='top-right' reverseOrder={false}/>
     <PageProvider initial={initial}>
+      <SelectedItemProvider>
+
+
     <div>
     <BrowserRouter>
       <Routes>
@@ -37,6 +41,7 @@ function App() {
     </BrowserRouter>
    
     </div>
+      </SelectedItemProvider>
     </PageProvider>
       
     </AppwriteProvider>

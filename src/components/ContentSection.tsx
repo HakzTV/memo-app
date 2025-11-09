@@ -18,6 +18,7 @@ import SearchControls from "./FilterButtons";
 import { fetchUserById } from "../lib/userService";
 import { Account, Query } from "appwrite";
 import client, { databases } from "../lib/appwrite";
+import { useSelectedItem } from "../hooks/useSelctedItem";
 
 type Props = MainContentProps & {
   pills?: Pill[]; // pills passed in (abstract)
@@ -102,7 +103,7 @@ const [inboxFilters, setInboxFilters] = useState<{ from?: string | null; to?: st
 
   // computed filtered view (after pill filter AND search)
   const [filtered, setFiltered] = useState<FetchResponse>({ items: [], total: 0 });
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const {selectedId, setSelectedId} = useSelectedItem();
 
   // Fetch raw data when pageId changes
 // Fetch memos owned by the logged-in user
@@ -128,6 +129,7 @@ useEffect(() => {
         const mapped: ContentItem[] = result.documents.map((doc) => ({
           id: doc.$id,
           subject: doc.subject,
+          description: doc.description,
           referenceNumber: doc.referenceNumber,
           status: doc.status,
           owner: doc.owner,

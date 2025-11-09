@@ -8,6 +8,7 @@ import MemoTable from "../components/Dashboard";
 import ContentSection from "../components/ContentSection";
 import { sidebarItems } from "../props/SidebarProps";
 import ComponentSwitcher from "../components/ComponentSwitcher";
+import MemoViewWrapper from "../components/MemoViewWrapper";
 
 const MainView: React.FC = () => {
     const { pageId } = usePage();
@@ -120,6 +121,14 @@ const MainView: React.FC = () => {
             <div className="flex gap-[5px] flex-1 w-full text-slate-700">
                 <ContentSection pageId={pageId} />
                 <ComponentSwitcher />
+            </div>
+        );
+    }
+ if(pageId === "drafts"){
+        return(
+            <div className="flex gap-[5px] flex-1 w-full text-slate-700">
+                <ContentSection pageId={pageId} />
+                <MemoViewWrapper />
             </div>
         );
     }

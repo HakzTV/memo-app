@@ -55,16 +55,16 @@ export default function MemoTable({ items, selectedId, onSelect, className = "" 
         // Return a shallow copy when there's no query so we don't return the original props array by reference.
         if (!q) return uniqueItems.slice();
         return uniqueItems.filter((it: ContentItem) => {
-            const title = it.title ?? "";
+            const title = it.subject ?? "";
             if (String(title).toLowerCase().includes(q)) return true;
 
-            // support tags as string or string[] if present
-            const tagsVal = it.tags;
-            if (Array.isArray(tagsVal)) {
-                if (tagsVal.join(" ").toLowerCase().includes(q)) return true;
-            } else if (tagsVal != null) {
-                if (String(tagsVal).toLowerCase().includes(q)) return true;
-            }
+            // // support tags as string or string[] if present
+            // const tagsVal = it.tags;
+            // if (Array.isArray(tagsVal)) {
+            //     if (tagsVal.join(" ").toLowerCase().includes(q)) return true;
+            // } else if (tagsVal != null) {
+            //     if (String(tagsVal).toLowerCase().includes(q)) return true;
+            // }
 
             return false;
         });
@@ -218,15 +218,16 @@ function isPromise<T = unknown>(v: unknown): v is Promise<T> {
                                 >
                                     <td className="px-4 sm:px-6 py-4 align-top whitespace-nowrap text-sm">
                                         <div className="flex flex-col">
-                                            <span className="font-semibold text-slate-800">{truncateText(it.title, 50)}</span>
+                                            <span className="font-semibold text-slate-800">{truncateText(it.subject, 50)}</span>
                                             {/* optional small tag list (if tags exist) */}
-                                            {Array.isArray(it.tags) && it.tags.length > 0 ? (
+                                            {/* {Array.isArray(it.tags) && it.tags.length > 0 ? (
                                                 <div className="text-xs text-slate-500 mt-1">
                                                     {it.tags.join(", ")}
                                                 </div>
                                             ) : it.tags ? (
                                                 <div className="text-xs text-slate-500 mt-1">{String(it.tags)}</div>
-                                            ) : null}
+                                            ) : null} */}
+
                                         </div>
                                     </td>
 
@@ -239,11 +240,11 @@ function isPromise<T = unknown>(v: unknown): v is Promise<T> {
                                     </td>
 
                                     <td className="px-4 sm:px-6 py-4 align-top text-sm text-slate-700 whitespace-nowrap">
-                                        {it.memoAuthor?.name ?? it.memoRecipient ?? ""}
+                                        {it.assignedTo ?? it.assignedTo ?? ""}
                                     </td>
 
                                     <td className="px-4 sm:px-6 py-4 align-top text-sm text-slate-700 whitespace-nowrap">
-                                        {formatDisplayDate(it.dateCompleted)}
+                                        {formatDisplayDate(it.date)}
                                     </td>
                                 </tr>
                             );
