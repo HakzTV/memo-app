@@ -1,5 +1,7 @@
 import { FileText, Paperclip, X } from "lucide-react";
 import React, { useState, useImperativeHandle, forwardRef } from "react";
+import ReactQuill from "react-quill-new";
+import "react-quill-new/dist/quill.snow.css";
 
 type GenericFormSchema<T> = Partial<Record<keyof T, T[keyof T]>>;
 
@@ -179,15 +181,33 @@ const handleRemoveFile = (name: string, index: number) => {
     })()}
   </select>
 
-            /* ---- TEXTAREA ---- */
-            ) : fieldType === "textarea" ? (
-              <textarea
-                name={key}
-                value={String(fieldValue)}
-                onChange={handleChange}
-                className="border border-sky-200 rounded-md p-3 min-h-[120px] focus:ring-2 focus:ring-sky-400 outline-none"
-                placeholder={`Enter ${key}`}
-              />
+           /* ---- TEXTAREA ---- */
+) : fieldType === "textarea" ? (
+  <ReactQuill
+    theme="snow"
+    value={String(fieldValue || "")}
+    onChange={(content) =>
+      setFormData((prev) => ({
+        ...prev,
+        [key]: content,
+      }))
+    }
+    className="border border-sky-200 rounded-md min-h-[200px] bg-white"
+    modules={{
+      toolbar: [
+        [{ header: [1, 2, 3, false] }],
+        ["bold", "italic", "underline", "strike"],
+        [{ color: [] }, { background: [] }],
+        [{ align: [] }],
+        ["blockquote", "code-block"],
+        [{ list: "ordered" }, { list: "bullet" }],
+        ["link", "image"],
+        ["clean"],
+      ],
+    }}
+    placeholder={`Enter ${key}`}
+  />
+
 
             /* ---- FILE UPLOAD SECTION ---- */
             ) : fieldType === "file" ? (

@@ -19,7 +19,7 @@ No more lost memos, confusing email threads, or unclear follow-ups. MemoFlow cen
 ---
 More to come
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stackgt
 
 | Layer | Technology |
 |------|------------|
